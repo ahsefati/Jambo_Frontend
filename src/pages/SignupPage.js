@@ -12,7 +12,6 @@ import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import useResponsive from '../hooks/useResponsive';
 
 // components
-import Logo from '../components/logo';
 import Iconify from '../components/iconify';
 
 // sections
@@ -85,7 +84,7 @@ export default function SignupPage() {
   return (
     <>
       <Helmet>
-        <title> CoinSigma | Sign up </title>
+        <title> Jambo | Sign up </title>
       </Helmet>
 
       <StyledRoot>
@@ -93,7 +92,7 @@ export default function SignupPage() {
         {mdUp && (
           <StyledSection>
             <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-              Hi, Welcome to CoinSigma!
+              Hi, Welcome to Jambo!
             </Typography>
             <img src="/assets/illustrations/illustration_login.png" alt="login" />
           </StyledSection>
@@ -102,7 +101,7 @@ export default function SignupPage() {
         <Container maxWidth="sm">
           <StyledContent>
             <Typography variant="h4" gutterBottom>
-              Sign up in CoinSigma
+              Sign up in Jambo
             </Typography>
 
             <Typography variant="body2" sx={{ mb: 4 }}>

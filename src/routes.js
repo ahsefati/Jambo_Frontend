@@ -4,22 +4,15 @@ import { Navigate, useRoutes } from 'react-router-dom';
 import DashboardLayout from './layouts/dashboard';
 import SimpleLayout from './layouts/simple';
 
-// Blog
-import BlogPage from './pages/BlogPage';
-
 // Auth
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import ForgotPassPage from './pages/ForgotPassPage';
+import UserProfilePage from './pages/UserProfilePage';
 
 // Main Pages
 import Page404 from './pages/Page404';
 import DashboardAppPage from './pages/DashboardAppPage';
-import SavedTools from './pages/SavedTools';
-import UserProfilePage from './pages/UserProfilePage';
-
-// Tools
-import CoinDetailsPage from './pages/Tools/CoinDetailsPage';
 
 // ----------------------------------------------------------------------
 
@@ -31,9 +24,7 @@ export default function Router() {
       children: [
         { element: <Navigate to="/dashboard/app" />, index: true },
         { path: 'app', element: <DashboardAppPage /> },
-        { path: 'savedtools', element: <SavedTools /> },
         { path: 'userprofile', element: <UserProfilePage /> },
-        { path: 'coindetails/:id', element: <CoinDetailsPage /> },
       ],
     },
     {

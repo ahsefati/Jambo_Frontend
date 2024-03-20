@@ -3,13 +3,10 @@ import { useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 // @mui
 import { styled, alpha } from '@mui/material/styles';
-import { Box, Link, Button, Drawer, Typography, Avatar, Stack, Grid } from '@mui/material';
-// mock
-import account from '../../../_mock/account';
+import { Box, Link, Drawer, Typography, Avatar } from '@mui/material';
 // hooks
 import useResponsive from '../../../hooks/useResponsive';
 // components
-import Logo from '../../../components/logo';
 import Scrollbar from '../../../components/scrollbar';
 import NavSection from '../../../components/nav-section';
 import Iconify from '../../../components/iconify';
@@ -63,9 +60,7 @@ export default function Nav({ openNav, onCloseNav }) {
       }}
     >
 
-      <Box sx={{mx: 2.5 }}>
-        <h1 style={{fontSize:'200%', marginTop:'12px'}}>CoinSigma</h1>
-      </Box>
+      <Box onClick={()=>{window.location="https://www.jambo.cloud/"}} sx={{ px: 2.5, py: 2, display: 'inline-flex', width:'100%', cursor:'pointer' }} component={"img"} src="/assets/Jambo-logo.svg"/>
     
       <Box sx={{ mb: 3, mx: 2.5 }}>
         {user?
@@ -98,46 +93,8 @@ export default function Nav({ openNav, onCloseNav }) {
         }
       </Box>
 
-
-
       <NavSection data={navConfig} />
 
-
-      <Box sx={{ flexGrow: 1 }} />
-
-
-
-      <Box sx={{ px: 2.5, pb: 3, mt: 10 }}>
-        <Stack alignItems="center" spacing={3} sx={{ pt: 5, borderRadius: 2, position: 'relative' }}>
-          <Box
-            component="img"
-            src="/assets/illustrations/illustration_avatar.png"
-            sx={{ width: 100, position: 'absolute', top: -40 }}
-          />
-
-          <Box sx={{ textAlign: 'center' }}>
-           
-            <Typography gutterBottom variant="h6">
-              Need help?
-            </Typography>
-
-            <Grid container spacing={3}>
-              <Grid item xs={4}>
-                <Iconify icon={'logos:telegram'} width={24} height={24} />
-              </Grid>
-              <Grid item xs={4}>
-                <Iconify icon={'skill-icons:instagram'} width={24} height={24} />
-              </Grid>
-              <Grid item xs={4}>
-                <Iconify icon={'logos:twitter'} width={24} height={24} />
-              </Grid>
-            </Grid>
-
-          </Box>
-
-          
-        </Stack>
-      </Box>
     </Scrollbar>
   );
 

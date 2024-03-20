@@ -1,5 +1,5 @@
 {
-  "name": "CoinSigma",
+  "name": "jambointerview",
   "author": "Amirhossein Sefati",
   "licence": "MIT",
   "version": "1.0.0",
@@ -7,6 +7,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "mocha": "nyc mocha --timeout=10000 --exit",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .js,.jsx ./src",
@@ -45,6 +46,7 @@
     "@mui/lab": "^5.0.0-alpha.103",
     "@mui/material": "^5.10.9",
     "@mui/styles": "^5.11.9",
+    "@mui/x-date-pickers": "^6.19.7",
     "@react-oauth/google": "^0.7.0",
     "@react-pdf/renderer": "^3.1.8",
     "apexcharts": "^3.36.0",
@@ -53,7 +55,8 @@
     "change-case": "^4.1.2",
     "chart.js": "^4.4.1",
     "chartjs-adapter-moment": "^1.0.1",
-    "date-fns": "^2.29.3",
+    "date-fns": "^3.6.0",
+    "dayjs": "^1.11.10",
     "history": "^5.3.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",

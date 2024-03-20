@@ -113,7 +113,7 @@ export default function UserProfileCard({ author, joined, avatar }) {
         />
 
 
-        <StyledCover alt={author} src={"/assets/images/covers/cover_3.jpg"} />
+        <StyledCover alt={author} src={"/assets/images/covers/profile_cover.jpg"} />
       </StyledCardMedia>
       
       <CardContent

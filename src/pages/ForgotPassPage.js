@@ -12,20 +12,9 @@ import { ForgotPassForm } from '../sections/auth/user';
 
 // hooks
 import useResponsive from '../hooks/useResponsive';
-// components
-import Iconify from '../components/iconify';
 
-// API
-import {signup } from '../api/actions/users';
 
 // ----------------------------------------------------------------------
-
-const StyledRoot = styled('div')(({ theme }) => ({
-  [theme.breakpoints.up('md')]: {
-    display: 'flex',
-  },
-}));
-
 const StyledSection = styled('div')(({ theme }) => ({
   width: '100%',
   maxWidth: 480,
@@ -51,12 +40,10 @@ const StyledContent = styled('div')(({ theme }) => ({
 export default function ForgotPassPage() {
   const mdUp = useResponsive('up', 'md');
 
-  const navigate = useNavigate()
-
   return (
     <>
       <Helmet>
-        <title> CoinSigma | Forgot Password </title>
+        <title> Jambo | Forgot Password </title>
       </Helmet>
 
       <StyledRoot>
@@ -64,7 +51,7 @@ export default function ForgotPassPage() {
         {mdUp && (
           <StyledSection>
             <Typography variant="h3" sx={{ px: 5, mt: 10, mb: 5 }}>
-              Hi, Welcome to CoinSigma!
+              Hi, Welcome to Jambo!
             </Typography>
             <img src="/assets/illustrations/illustration_login.png" alt="login" />
           </StyledSection>

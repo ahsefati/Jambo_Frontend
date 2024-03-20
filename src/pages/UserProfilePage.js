@@ -28,7 +28,7 @@ export default function UserProfilePage() {
     {user?
       <>
         <Helmet>
-          <title> CoinSigma | Profile </title>
+          <title> Jambo | Profile </title>
         </Helmet>
 
         <Container maxWidth="xl">
@@ -40,7 +40,7 @@ export default function UserProfilePage() {
 
           <Grid container spacing={3}>
             <Grid item xs={12} sm={12} md={5} lg={5} xl={5}>
-              <UserProfileCard key={user.result._id} author={user.result.name} avatar={user.result.avatar} joined={faker.date.past()}/>
+              <UserProfileCard key={user.result._id} author={user.result.name} avatar={user.result.avatar} joined={user.result.joined}/>
             </Grid>
 
             <Grid item xs={12} sm={12} md={7} lg={7} xl={7}>

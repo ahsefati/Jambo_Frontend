@@ -3,18 +3,13 @@ import { GoogleOAuthProvider } from '@react-oauth/google';
 import Router from './routes';
 // theme
 import ThemeProvider from './theme';
-// components
-import ScrollToTop from './components/scroll-to-top';
-import { StyledChart } from './components/chart';
 
 // ----------------------------------------------------------------------
 
 export default function App() {
   return (
-    <GoogleOAuthProvider clientId="865555904435-cipjskg0onhkv685uqve4dljlh7s1cvv.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="530634750163-77migb0ic67rg58fha2ba44jpsopg97e.apps.googleusercontent.com">
       <ThemeProvider>
-        <ScrollToTop />
-        <StyledChart />
         <Router />
       </ThemeProvider>
     </GoogleOAuthProvider>

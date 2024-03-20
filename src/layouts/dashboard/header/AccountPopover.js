@@ -7,9 +7,6 @@ import { useNavigate } from 'react-router-dom';
 
 import Iconify from '../../../components/iconify/Iconify';
 
-// mocks_
-import account from '../../../_mock/account';
-
 // ----------------------------------------------------------------------
 
 const MENU_OPTIONS_LOGGEDIN = [
@@ -17,11 +14,6 @@ const MENU_OPTIONS_LOGGEDIN = [
     label: 'Dashboard',
     icon: 'eva:home-fill',
     to: '/dashboard'
-  },
-  {
-    label: 'Transactions',
-    icon: 'eva:person-fill',
-    to:'/dashboard/savedtools'
   },
   {
     label: 'Settings',

@@ -22,13 +22,13 @@ export default function Page404() {
   return (
     <>
       <Helmet>
-        <title> 404 Page Not Found | Minimal UI </title>
+        <title> Jambo | Page Not Found</title>
       </Helmet>
 
       <Container>
         <StyledContent sx={{ textAlign: 'center', alignItems: 'center' }}>
 
-          <Box onClick={()=>{window.location="https://coinsigma.netlify.app"}} sx={{ px: 2.5, py: 3, display: 'inline-flex', width:'80%', cursor:'pointer' }} component={"img"} src="/assets/Kooch_main_logo.png"/>
+          <Box onClick={()=>{window.location="https://www.jambo.cloud/"}} sx={{ px: 2.5, py: 2, display: 'inline-flex', width:'80%', cursor:'pointer' }} component={"img"} src="/assets/Jambo-logo.svg"/>
           <Typography variant="h3" paragraph>
             Sorry, page not found!
           </Typography>
@@ -41,7 +41,7 @@ export default function Page404() {
           <Box
             component="img"
             src="/assets/illustrations/illustration_404.svg"
-            sx={{ height: 260, mx: 'auto', my: { xs: 5, sm: 10 } }}
+            sx={{ height: 160, mx: 'auto', my: { xs: 5, sm: 10 } }}
           />
 
           <Button to="/" size="large" variant="contained" component={RouterLink}>

@@ -71,12 +71,3 @@ export const updateUserAvatar = async (updatedAvatar) => {
         return error
     }
 }
-
-export const saveATool = async (id) => {
-    try {
-        const {data} = await api.saveATool(id)
-        return data
-    } catch (error) {
-        return error
-    }
-}
