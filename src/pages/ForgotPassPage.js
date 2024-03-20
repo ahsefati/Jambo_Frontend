@@ -15,6 +15,12 @@ import useResponsive from '../hooks/useResponsive';
 
 
 // ----------------------------------------------------------------------
+const StyledRoot = styled('div')(({ theme }) => ({
+  [theme.breakpoints.up('md')]: {
+    display: 'flex',
+  },
+}));
+
 const StyledSection = styled('div')(({ theme }) => ({
   width: '100%',
   maxWidth: 480,
